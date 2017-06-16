@@ -22,10 +22,21 @@
       <scope>test</scope>
     </dependency>
      <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>1.10.19</version>
-            <scope>test</scope>
-        </dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.9.5</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+  <target name="runTests" description="Run JUnit tests">
+    <junit printsummary="yes" dir="test-classes" fork="true">
+        <classpath>
+            <pathelement location="inst-classes" />
+        </classpath>
+        <test name="AllTests.AllNonGWTTestCaseTests" haltonfailure="no" outfile="result">
+            <formatter type="xml" />
+        </test>
+    </junit>
+</target>
+  
 </project>
