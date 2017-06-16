@@ -28,15 +28,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <target name="runTests" description="Run JUnit tests">
-    <junit printsummary="yes" dir="test-classes" fork="true">
-        <classpath>
-            <pathelement location="inst-classes" />
-        </classpath>
-        <test name="AllTests.AllNonGWTTestCaseTests" haltonfailure="no" outfile="result">
-            <formatter type="xml" />
-        </test>
-    </junit>
-</target>
+  
   
 </project>
