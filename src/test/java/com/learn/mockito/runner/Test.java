@@ -6,7 +6,7 @@ import org.junit.runner.notification.Failure;
 
 import com.learn.mockito.suite.AllTests;
 
-public class Testrunner {
+public class Test {
 
 	 public static void main(String[] args) {
 	      Result result = JUnitCore.runClasses(AllTests.class);
