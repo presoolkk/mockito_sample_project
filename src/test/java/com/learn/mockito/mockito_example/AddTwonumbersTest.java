@@ -31,8 +31,6 @@ public class AddTwonumbersTest {
 		
 		int result = 2 + 3;
 		assertEquals(result, add.ab(2,3));
-		
-		
 	}
 	
 	
